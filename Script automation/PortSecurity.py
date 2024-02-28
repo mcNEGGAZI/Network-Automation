@@ -19,18 +19,9 @@ from napalm_connection import napalm_connection
 
 # The device is configured using the entered values
 def port_security(ip,username,password=None,enable_secret_password=None,device_type='ios'):
-    driver = get_network_driver(device_type)
-    device=driver(hostname=ip,username=username,password=password,optional_args={'secret':enable_secret_password})
-    device.open()
-    if device.is_alive():
-        #device.is_alive() is used to check if the device is reachable
-        #If the device is reachable, the function returns True else it returns False
-
-        print('Connection successful')
-    else:
-        print('Connection failed')
-
     
+    #we gonna use the napalm_connection function to connect to the device
+    device = napalm_connection(ip,username,password,enable_secret_password,device_type)
 
     interface_input = input('Enter the interface: ')
     print(f'The interface {interface_input} should be in ACCESS or TRUNK mode to perform port security')
@@ -89,5 +80,5 @@ def port_security(ip,username,password=None,enable_secret_password=None,device_t
     print('Port security configuration completed')
     print('-'*50)
 
-#Done
+
     
