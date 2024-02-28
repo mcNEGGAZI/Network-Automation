@@ -1,10 +1,8 @@
 from napalm import get_network_driver
-import napalm
+from napalm_connection import napalm_connection
 
 # Configuring port security on a Cisco IOS device using NAPALM
-#--------------- I USE NAPALM PACKAGE --------------
-#For get_network_driver() function, it is used to get the driver for the device type
-#device_type = 'ios' for cisco devices and 'junos' for juniper devices and 'eos' for arista devices 
+
 
 #-------- USERNAME should have privilege 15 to execute the commands ------------
 #-------- USERNAME should have privilege 15 to execute the commands ------------
@@ -91,4 +89,5 @@ def port_security(ip,username,password=None,enable_secret_password=None,device_t
     print('Port security configuration completed')
     print('-'*50)
 
-
+#Done
+    
