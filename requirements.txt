@@ -1,5 +1,3 @@
-sudo apt update
-sudo apt install python
-pip install netmiko
-pip install paramiko
-pip install napalm
+pip==20.0.2 or higher
+netmiko==3.3.3 or higher
+napalm==3.2.0 or higher
