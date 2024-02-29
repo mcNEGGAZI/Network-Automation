@@ -1,4 +1,5 @@
 from napalm_connection import napalm_connection,napalm_close
+from napalm.base.exceptions import LockError,UnlockError
 from netmiko import ConnectHandler
 
 #DIA = Dynamic arp inspection 
@@ -36,16 +37,23 @@ def arp_inspection(ip,username,password=None,secret=None,device_type='ios'):
             print('The configuration is different from the device running configuration')
             print('Committing the configuration')
             device.commit_config()
+            print('-'*50)
+            print('ARP inspection configuration completed')
+            print('-'*50)
+
         else:
             print('The configuration is the same as the device running configuration')
             print('Discarding the configuration')
             device.discard_config()
+    except LockError as e :
+        print(f'Error: {e}')
+        
+    except UnlockError as e:
+        print(f'Error: {e}')
     except Exception as e:
-        print(e)
+        print(f'Error: {e}')
     finally:
         napalm_close(device)
-        print('-'*50)
-        print('ARP inspection configuration completed')
-        print('-'*50)
+
 
 
