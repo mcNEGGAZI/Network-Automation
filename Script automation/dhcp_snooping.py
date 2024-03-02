@@ -46,7 +46,7 @@ def dhcp_snooping(ip,username,password=None,enable_secret_password=None,device_t
         print(f'Failed to commit configuration : {e}')
     except UnlockError as e:
         print(f'Failed to commit configuration : {e}')
-    except Exception as e:
+    except LockError as e:
         print(f'Failed to commit configuration : {e}')
     finally:
         napalm_close(device)
@@ -82,7 +82,7 @@ def dhcp_snooping_rate_limiting(ip,username,password=None,enable_secret_password
         print(f'Failed to commit configuration : {e}')
     except UnlockError as e:
         print(f'Failed to commit configuration : {e}')
-    except Exception as e:
+    except LockError as e:
         print(f'Failed to commit configuration : {e}')
     finally:
         napalm_close(device)

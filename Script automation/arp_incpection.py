@@ -55,5 +55,19 @@ def arp_inspection(ip,username,password=None,secret=None,device_type='ios'):
     finally:
         napalm_close(device)
 
-
+def arp_inspection_information(ip,username,password=None,secret=None,device_type='ios'):
+    device = napalm_connection(ip,username,password,secret,device_type)
+    try:
+        output_inspection = device.cli(['show ip arp inspection'])
+        print(output_inspection['show ip arp inspection'])
+        output_inspection_interface = device.cli(['show ip arp inspection interfaces'])
+        print(output_inspection_interface['show ip arp inspection interfaces'])
+    except Exception as e:
+        print(f'Error: {e}')
+    except LockError as e:
+        print(f'Error: {e}')
+    except UnlockError as e:
+        print(f'Error: {e}')
+    finally:
+        napalm_close(device)
 
