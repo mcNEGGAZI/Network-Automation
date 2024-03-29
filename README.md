@@ -109,5 +109,6 @@ This project is licensed under the MIT License.
 # Contributors
 
 - **NEGGAZI Mohamed Chakib**
-
+- **TADRIST Zakaria**
+  
 
