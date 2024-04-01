@@ -1,0 +1,19 @@
+Interface,Input Rate bps,Input Rate pps,Output Rate bps,Output Rate pps,Packet Output,Packet Output Bytes,Packet Output Underruns,Packet Input,Packet Input Bytes,Packet Input No Buffer,Runts,Giants,Throttles,Input Errors,CRC,Frame,Overrun,Ignored Input,Output Buffer Failures,Output Buffers Swapped Out,Unknown Protocol Drops,Output Errors,Collisions,Interface Resets,Output Errors,Interface Resets,Received Brodcast Vlan Interface ,IP Multicasts Vlan Interface ,Received Brodcast Physical Interface,IP Multicasts Physical Interface
+Ethernet0/0,0,0,1000,1,2386,196510,0,321,30506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Ethernet0/1,1000,1,1000,1,1216,113523,0,723,87601,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,53,0,53,0
+Ethernet0/2,0,0,1000,1,979,94547,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet0/3,0,0,1000,1,791,62159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet1/0,0,0,1000,1,792,62634,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet1/1,0,0,1000,1,791,62147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet1/2,0,0,1000,1,791,62159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet1/3,0,0,1000,1,791,62147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet2/0,0,0,1000,1,792,62607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet2/1,0,0,1000,1,791,62159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet2/2,0,0,1000,1,791,62147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet2/3,0,0,1000,1,791,62159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet3/0,0,0,1000,1,791,62147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet3/1,0,0,1000,1,791,62147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet3/2,0,0,1000,1,791,62159,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Ethernet3/3,0,0,1000,1,791,62147,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,
+Vlan1,0,0,1000,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,
+Vlan10,1000,1,1000,1,370,63169,0,289,30370,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,
