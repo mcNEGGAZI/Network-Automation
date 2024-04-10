@@ -1,5 +1,7 @@
 from napalm_connection import napalm_connection,napalm_close,napalm_lock
-from napalm.base.exceptions import LockError , UnlockError
+from napalm.base.exceptions import LockError,UnlockError
+
+
 
 def dhcp_snooping(ip,username,password=None,enable_secret_password=None,device_type='ios'):
     

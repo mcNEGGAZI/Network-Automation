@@ -86,7 +86,7 @@ def get_interface_info_switch_CISCO(device_type_input, ip_input, username_input,
     arp_regex = r'\s+ARP type: (\S+), ARP Timeout (\S+)'
 
     
-
+    
 
     #creat a list of interfaces 
     interface_list = re.findall(interface_regex, show_interfaces_output)
