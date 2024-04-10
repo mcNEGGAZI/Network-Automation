@@ -387,4 +387,4 @@ def get_interface_info_switch_CISCO(device_type_input, ip_input, username_input,
 
 #get_interface_info_router_CISCO(device_type_input, ip_input, username_input, password_input, enable_secret_password_input)
 
-#get_interface_info_switch_CISCO(device_type_input, ip_input, username_input, password_input, enable_secret_password_input)
+get_interface_info_switch_CISCO(device_type_input, ip_input, username_input, password_input, enable_secret_password_input)
