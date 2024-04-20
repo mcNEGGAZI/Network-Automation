@@ -38,6 +38,9 @@ def trunk_access():
 
     return trunk_interfaces, access_interfaces
 
+trunk_int,acc_int=trunk_access()
+print(trunk_int)
+print(acc_int)
 
 
 def normalize_interface_name(interface_name):
@@ -58,9 +61,9 @@ def end_user():
         if normalized_interface in normalized_access_interfaces:
             access_mac_addresses.append(entry)
     
-    print(access_mac_addresses)
+    return access_mac_addresses
 
-end_user()
+
 
 
 
