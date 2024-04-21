@@ -7,8 +7,8 @@ import json
 
 def end_user():
     device=napalm_connection('192.168.10.254','netauto','netauto','netauto','ios')
-    mac_table=device.get_mac_address_table()
-    #arp_table=device.get_arp_table()
+    #mac_table=device.get_mac_address_table()
+    arp_table=device.get_arp_table()
     
     #print(device.get_vlans())
 
@@ -16,9 +16,9 @@ def end_user():
     
         
     #print(f'MAC Address: {mac_table}')
-    print(f'MAC Address: {mac_table}')
+    #print(f'MAC Address: {arp_table}')
     #compare 3 first octets of MAC address with vendors.json and get the vendor of this mac address
-    
+    print(device.get_interfaces_counters())
     napalm_close(device)
 
 
