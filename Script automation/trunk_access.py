@@ -50,7 +50,7 @@ def normalize_interface_name(interface_name):
         return 'Et' + interface_name[8:]
     return interface_name
 
-def end_user():
+def device_connected_on_switch():
     data=load_mac_vendors_data()
     device = napalm_connection('192.168.10.254', 'netauto', 'netauto', 'netauto', 'ios')
     mac_table = device.get_mac_address_table()
