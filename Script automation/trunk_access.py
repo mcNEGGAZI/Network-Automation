@@ -101,5 +101,5 @@ def device_connected_on_switch():
 
 
 
-access_mac_addresses, mac_prefix = end_user()
+access_mac_addresses, mac_prefix = device_connected_on_switch()
 print(access_mac_addresses)
