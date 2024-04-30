@@ -73,7 +73,7 @@ def device_connected_on_switch():
             vendor = data.get(mac_prefix)
             interface_name = interface_mapping.get(normalized_interface)
             access_mac_addresses.append(
-                {   'Source ': '192.168.10.254',
+                {   
                     'mac': entry['mac'],
                     'interface': normalized_interface,
                     'vlan': entry['vlan'],
@@ -95,6 +95,10 @@ def device_connected_on_switch():
 
     
     napalm_close(device)
+    for item in access_mac_addresses:
+        print('--'*20)
+        print(item)
+        print('--'*20)
 
     return access_mac_addresses,mac_prefix
 
